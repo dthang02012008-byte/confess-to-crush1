@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lời tỏ tình nho nhỏ 💌</title>
+<style>
+body {
+  background: linear-gradient(to bottom right, #ffb6c1, #ffc0cb);
+  font-family: 'Comic Sans MS', cursive;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+button {
+  background-color: white;
+  color: #ff6699;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #ff99cc;
+  color: white;
+}
+.hidden { display: none; }
+</style>
+</head>
+<body>
+
+<h2>Thật ra... em thích anh lâu rồi đó 🥺</h2>
+<p>Nhưng mà... anh có muốn biết lí do không?</p>
+
+<button onclick="showReason()">Có 😳</button>
+<button onclick="showSkip()">Không 😅</button>
+
+<p id="reason" class="hidden">Vì mỗi lần thấy anh cười là tim em cũng cười theo 💓</p>
+<p id="skip" class="hidden">Thôi, nhưng em vẫn nói luôn: Em thích anh đó 😳</p>
+
+<div id="next" class="hidden">
+  <p>Giờ thì... nếu em giảm được 10kg làm ngiu em nhé Hà? 💞</p>
+  <button onclick="showYes()">Có 💖</button>
+  <button onclick="showNo()">Không 😭</button>
+</div>
+
+<p id="yes" class="hidden">Yayyy! Em biết mà, anh cũng thích em đúng không 😍</p>
+<p id="no" class="hidden">Huhu... nhưng em vẫn chúc anh hạnh phúc 🥺</p>
+
+<script>
+function showReason() {
+  document.getElementById("reason").style.display = "block";
+  document.getElementById("next").style.display = "block";
+}
+function showSkip() {
+  document.getElementById("skip").style.display = "block";
+  document.getElementById("next").style.display = "block";
+}
+function showYes() {
+  document.getElementById("yes").style.display = "block";
+}
+function showNo() {
+  document.getElementById("no").style.display = "block";
+}
+</script>
+
+</body>
+</html>
